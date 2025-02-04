@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: darkgray;
+    color: black;
+}
+
+header {
+    text-align: center;
+    font-family: monospace;
+    background-color: darkgray;
+    color: black;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+img {
+    width: 60%;
+    height: 80%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
