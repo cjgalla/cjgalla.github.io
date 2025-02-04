@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: darkgray;
+    color: black;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
