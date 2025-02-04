@@ -23,11 +23,15 @@ a:hover {
 }
 
 img {
-    width: 60%;
-    height: 80%;
+    width: 40%;
+    height: 60%;
 }
 
 figure {
     text-align: center;
     font-style: italic;
+}
+
+li {
+    text-align: left;
 }
