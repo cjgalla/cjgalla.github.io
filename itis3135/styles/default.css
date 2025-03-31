@@ -36,33 +36,47 @@ li {
     text-align: left;
     margin-bottom: 5px;
 }
-/* Secondary Nav Bar Styling */
+
 .second-nav {
-    background-color: darkgray;
+    background-color: #b0b0b0; 
     color: black;
-    padding: 10px;
+    padding: 6px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em; 
 }
 
+
+.second-nav .spacer {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+
 .second-nav a {
-    color: crimson;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
+    color: black;
+    font-weight: normal;
+    padding: 5px 10px;
+    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 .second-nav a:hover {
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .second-nav {
         flex-direction: column;
         align-items: center;
+        font-size: 1em;
     }
 }
+
