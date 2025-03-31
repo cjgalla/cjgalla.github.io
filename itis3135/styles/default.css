@@ -3,6 +3,11 @@ body {
     font-family: monospace;
     background-color: darkgray;
     color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -91,6 +96,40 @@ nav a:hover {
     color: white;
 }
 
+/* Main Content Section */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: #707070;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 3px solid #505050;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer p {
+    margin: 5px 0 0;
+}
+
 @media (max-width: 768px) {
     header {
         width: 95%;
@@ -98,5 +137,11 @@ nav a:hover {
     nav {
         flex-direction: column;
         align-items: center;
+    }
+    main {
+        width: 95%;
+    }
+    footer nav {
+        flex-direction: column;
     }
 }
