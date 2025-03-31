@@ -37,17 +37,14 @@ li {
     margin-bottom: 5px;
 }
 
-.second-nav {
-    background-color: #b0b0b0; 
-    color: black;
-    padding: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.95em; 
-}
 
+.second-nav {
+    display: inline-block; 
+    border: 2px solid gray; 
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: transparent;
+  }
 
 .second-nav .spacer {
     font-size: 1em;
@@ -61,22 +58,19 @@ li {
     color: black;
     font-weight: normal;
     padding: 5px 10px;
-    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 .second-nav a:hover {
     background-color: gray;
     color: white;
 }
 
-
 @media (max-width: 768px) {
     .second-nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1em;
+        padding: 8px;
     }
 }
-
