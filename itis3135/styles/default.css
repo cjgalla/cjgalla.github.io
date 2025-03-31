@@ -3,37 +3,38 @@ body {
     font-family: monospace;
     background-color: darkgray;
     color: black;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
 }
+
 
 a {
     color: crimson;
     text-decoration: none;
 }
 
+
 a:hover {
     color: orange;
     text-decoration: underline;
 }
+
 
 img {
     width: 40%;
     height: 60%;
 }
 
+
 figure {
     text-align: center;
     font-style: italic;
 }
 
+
 li {
     text-align: left;
     margin-bottom: 5px;
 }
+
 
 header {
     box-sizing: border-box;
@@ -48,6 +49,7 @@ header {
     margin: 20px auto;
 }
 
+
 nav {
     box-sizing: border-box;
     display: flex;
@@ -58,12 +60,14 @@ nav {
     width: 100%;
 }
 
+
 .separator {
     font-size: 1em;
     line-height: 1;
     vertical-align: middle;
     opacity: 0.8;
 }
+
 
 .second-nav {
     display: flex;
@@ -72,9 +76,11 @@ nav {
     background-color: transparent;
 }
 
+
 .second-nav a {
     color: #230C0F;
 }
+
 
 .second-nav .spacer {
     font-size: 1em;
@@ -82,6 +88,7 @@ nav {
     vertical-align: middle;
     opacity: 0.7;
 }
+
 
 nav a {
     color: crimson;
@@ -91,44 +98,12 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 nav a:hover {
     background-color: gray;
     color: white;
 }
 
-/* Main Content Section */
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    background-color: darkgray;
-    border-radius: 10px;
-}
-
-/* Footer Styling */
-footer {
-    width: 100%;
-    background-color: #707070;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    border-top: 3px solid #505050;
-}
-
-footer nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-footer p {
-    margin: 5px 0 0;
-}
 
 @media (max-width: 768px) {
     header {
@@ -138,10 +113,5 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    main {
-        width: 95%;
-    }
-    footer nav {
-        flex-direction: column;
-    }
 }
+
