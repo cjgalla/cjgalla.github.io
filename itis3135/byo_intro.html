@@ -6,10 +6,29 @@
     <link rel="stylesheet" href="styles/default.css">
     <title>BYO Introduction</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; }
-        label { font-weight: bold; display: block; margin-top: 10px; }
-        input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
-        button { margin-top: 10px; padding: 10px; cursor: pointer; }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        button { 
+            margin-top: 10px;
+            padding: 10px; 
+            cursor: pointer;
+        }
+        .form-row { 
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px; 
+        }
     </style>
 </head>
 <body>
@@ -27,15 +46,22 @@
     </nav>
     <h2>Personal Introduction Form</h2>
     <form id="introForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <p class="form-row">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" value="Collin" required>
         
+        <label for="middleInitial">Middle Initial:</label>
+        <input type="text" id="middleInitial" name="middleInitial" value="J" maxlength="1">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" value="Gallagher" required>
+
         <label for="nickname">Nickname:</label>
         <input type="text" id="nickname" name="nickname">
         
         <label for="mascot">Mascot:</label>
         <input type="text" id="mascot" name="mascot">
-        
+        </p>
         <label for="platform">Primary Computer Platform:</label>
         <input type="text" id="platform" name="platform">
         
