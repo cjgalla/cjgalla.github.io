@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MY PAGE & SURVEY</title>
+    <title>BAD WEBPAGE</title>
     <style>
+        @font-face {
+            font-family: 'Comic Papyrus';
+            src: url('https://example.com/comicpapyrus.ttf'); /* This font shouldn't even exist */
+        }
+
         body {
+            font-family: 'Comic Papyrus', sans-serif;
             background-color: white;
             color: black;
         }
-        h2 { font-family: Papyrus, fantasy; }
-        h1 { font-family: Times, serif; }
-        h3 { font-family: Comic Sans MS, cursive; }
-        .big-text {
-            font-size: 50px;
+
+        h2 {
+            font-family: 'Papyrus', fantasy;
             text-align: center;
+        }
+
+        h1 {
+            font-family: 'Comic Sans MS', cursive;
+            text-align: left;
+        }
+
+        .random-text {
             text-decoration: underline;
-            background-color: yellow;
         }
-        .ugly-border {
-            border-width: 10px;
-            border-style: dotted solid dashed double;
-            border-color: red green blue purple;
-            padding: 20px;
-            margin: 50px;
-        }
-        .centered {
+
+        p {
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            margin-left: 50px;
+            margin-right: 10px;
             text-align: center;
         }
-        .bad-form {
-            margin-left: 50px;
-            margin-right: 200px;
-            font-size: 30px;
+
+        .big-border {
+            border-width: 10px;
+            border-style: dashed dotted solid double;
+            border-color: red blue green yellow;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h2>Welcome to the Worst Page</h2>
-    <h1>Why are you here?</h1>
-    <h3>Oops, heading order is wrong</h3>
+    <header>
+        <a href="itis3135/index.html">Back to Homepage</a>
+        <a href="Mypage& Survey.htm">CRAPPY WEBPAGE</a>
+    </header>
     
-    <img src="goldenfinchiviously" alt="Golden Finch" width="400" height="400">
-    <h4 class="big-text">Mirrors are super cool, can be used to see yourself!</h4>
+    <h2>Subtitle Before Main Title</h2>
+    <h1>Main Title Below Subtitle</h1>
+
     
-    <ul class="centered">
-        <li>Bullet one</li>
-        <li>Bullet two</li>
+    <p class="random-text">This is underlined but shouldn't be.</p>
+    
+    
+    
+    
+    <p class="big-border">This paragraph has a huge border with four different styles.</p>
+
+    <ul style="text-align: center;">
+        <li>Centered bullet point</li>
+        <li>Another one</li>
     </ul>
+
     
-    <p class="centered">This paragraph is also centered because why not?</p>
     
-    <form class="bad-form">
-        <label> Name: </label>
-        <input type="text" style="font-family: Comic Sans MS;">
-        <br><br><br>
-        <label> Email: </label>
-        <input type="text">
-        <br>
-        <button type="submit">SUBMIT NOW</button>
-    </form>
+    <p style="background-color: yellow;">This text has an unnecessary background color.</p>
     
-    <div class="ugly-border">
-        This div has a disgusting border.
-    </div>
     
-    <br><br>
+
+    <img src="goldenfinchiviously" width="400" height="400" alt="A totally random and meaningless caption" />
+    <h4>Mirrors Are COOOOOOOL! They let you see your rad self! </h4>
+    
+    
+    
+    
+    
+    
+    <p>End of the worst webpage ever.</p>
+
+    
+    
 </body>
 </html>
