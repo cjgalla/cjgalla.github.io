@@ -1,3 +1,11 @@
+main {
+    width: 85%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+
 body {
     text-align: center;
     font-family: monospace;
