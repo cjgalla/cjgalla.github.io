@@ -57,10 +57,10 @@
         <input type="text" id="lastName" name="lastName" value="Gallagher" required>
 
         <label for="nickname">Nickname:</label>
-        <input type="text" id="nickname" name="nickname">
+        <input type="text" id="nickname" name="nickname" value="CJ">
         
         <label for="mascot">Mascot:</label>
-        <input type="text" id="mascot" name="mascot">
+        <input type="text" id="mascot" name="mascot" value="Carefree Goose">
         </p>
         <label for="platform">Primary Computer Platform:</label>
         <input type="text" id="platform" name="platform">
@@ -96,19 +96,9 @@
         <button type="reset">Reset</button>
     </form>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/cgalla17/">Charlotte.edu</a>
-            -
-            <a href="https://github.com/cjgalla">GitHub</a>
-            -
-            <a href="https://cjgalla.github.io/">GitHub.io</a>
-            -
-            <a href="https://www.linkedin.com/in/collingall/">Linkedin</a>
-            -
-            <a href="itis3135/">ITIS-3135</a>
-        </nav>
-        <p>Page built by <a href="collincollective.com/">Collin Collective</a>&copy; 2025</p>
+        <div data-include="compenents/footer.html">
     </footer>
+    <script src="scripts/HTMLInclude.js"></script>
     
     <script>
         function addCourse() {
