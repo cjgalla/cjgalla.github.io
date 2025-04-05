@@ -6,7 +6,6 @@
     <title>HTML Tables</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    </head>
     <style>
         h3 {
             margin-top: 32px;
@@ -47,11 +46,16 @@
             background-color: rgb(110, 110, 110);
             color: rgb(245, 245, 245);
         }
+        tr:has(th[colspan]) {
+            background-color: rgb(110, 110, 110);
+            color: rgb(245, 245, 245);
+        }
         figure tfoot {
             background-color: rgb(110, 110, 110);
             color: rgb(245, 245, 245);
         }
     </style>
+    </head>
     <body>
         <header>
             <div data-include="components/header.html" data-lazy="0"></div>
