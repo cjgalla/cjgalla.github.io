@@ -1,170 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-</head>
-<style>
-    h3 {
-        margin-top: 32px;
-    }
-    table {
-        width: 80%;
-        margin: 2px auto;
-        border-collapse: collapse;
-    }
-    figure table {
-        width: 90%;
-    }
-    tr {
-        text-align: left;
-    }
-    figure th {
-        width: 50%;
-    }
-    th, td {
-        padding: 5px 10px;
-        border: 1px solid black;
-    }
-    figure thead {
-        background-color: rgb(30, 30, 30);
-        color: rgb(245, 245, 245);
-    }
-    figure tbody tr:nth-child(odd) {
-        background-color: rgb(242, 242, 242);
-    }
-    figure tbody tr:nth-child(even) {
-        background-color: rgb(194, 194, 194);
-    }
-    tr:nth-of-type(odd) td[rowspan] {
-        background-color: rgb(110, 110, 110);
-        color: rgb(245, 245, 245);
-    }
+    </head>
+    <style>
+        h3 {
+            margin-top: 32px;
+        }
+        table {
+            width: 80%;
+            margin: 2px auto;
+            border-collapse: collapse;
+        }
+        figure table {
+            width: 90%;
+        }
+        tr {
+            text-align: left;
+        }
+        figure th {
+            width: 50%;
+        }
+        th, td {
+            padding: 5px 10px;
+            border: 1px solid black;
+        }
+        figure thead {
+            background-color: rgb(30, 30, 30);
+            color: rgb(245, 245, 245);
+        }
+        figure tbody tr:nth-child(odd) {
+            background-color: rgb(242, 242, 242);
+        }
+        figure tbody tr:nth-child(even) {
+            background-color: rgb(194, 194, 194);
+        }
+        tr:nth-of-type(odd) td[rowspan] {
+            background-color: rgb(110, 110, 110);
+            color: rgb(245, 245, 245);
+        }
 
-    figure tfoot {
-        background-color: rgb(110, 110, 110);
-        color: rgb(245, 245, 245);
-    }
-</style>
-<body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
-    <main>
-        <h2>HTML Tables</h2>
-            <h3>My Tabular Data</h3>
-            <ol>
-              <li>Spongebob Squarepants - sponge@bikinibiz.com</li>
-              <li>Lisa Simpson - lsimpson@yahoo.com</li>
-              <li>Michael Gallagher - michaeljosephgallagher@hotmail.com</li>
-              <li>Morty Smith - morty.mort@multiverse.org</li>
-              <li>Mario Hawkins - mhawki41@charlotte.edu</li>
-              <li>Scooby Doo - scoobyroo@mysteryINC.com</li>
-              <li>Aang Airbender - avatar@benders.com</li>
-              <li>Elsa Arendelle - queenice@frozenemp.com</li>
-            </ol>
+        figure tfoot {
+            background-color: rgb(110, 110, 110);
+            color: rgb(245, 245, 245);
+        }
+    </style>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+                <h3>My Tabular Data</h3>
+                <ol>
+                <li>Spongebob Squarepants - sponge@bikinibiz.com</li>
+                <li>Lisa Simpson - lsimpson@yahoo.com</li>
+                <li>Michael Gallagher - michaeljosephgallagher@hotmail.com</li>
+                <li>Morty Smith - morty.mort@multiverse.org</li>
+                <li>Mario Hawkins - mhawki41@charlotte.edu</li>
+                <li>Scooby Doo - scoobyroo@mysteryINC.com</li>
+                <li>Aang Airbender - avatar@benders.com</li>
+                <li>Elsa Arendelle - queenice@frozenemp.com</li>
+                </ol>
         
-            <h3>Employee Data in Simple Table</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Years of Service</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Spongebob Squarepants</td><td>sponge@bikinibiz.com</td><td>8</td></tr>
-                <tr><td>Lisa Simpson</td><td>lsimpson@yahoo.com</td><td>4</td></tr>
-                <tr><td>Michael Gallagher</td><td>michaeljosephgallagher@hotmail.com</td><td>15</td></tr>
-                <tr><td>Morty Smith</td><td>morty.mort@multiverse.org</td><td>2</td></tr>
-                <tr><td>Mario Hawkins</td><td>mhawki41@charlotte.edu</td><td>9</td></tr>
-                <tr><td>Scooby Doo</td><td>scoobyroo@mysteryINC.com</td><td>12</td></tr>
-                <tr><td>Aang Airbender</td><td>avatar@benders.com</td><td>20</td></tr>
-                <tr><td>Elsa Arendelle</td><td>queenice@gmail.com</td><td>6</td></tr>
-              </tbody>
-            </table>
-        
-            <h3>Employee Data in Complex Table</h3>
-            <figure>
-              <figcaption>Employee Information by Role and Monthly Salary</figcaption>
-              <table>
+                <h3>Employee Data in Simple Table</h3>
+                <table>
                 <thead>
-                  <tr>
-                    <th>Department</th>
+                    <tr>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Years</th>
-                    <th>Monthly Salary</th>
-                  </tr>
+                    <th>Years of Service</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td rowspan="2">Leadership</td>
-                    <td id="name1">Spongebob Squarepants</td>
-                    <td headers="name1">sponge@bikinibiz.com</td>
-                    <td headers="name1">8</td>
-                    <td headers="name1">$5000</td>
-                  </tr>
-                  <tr>
-                    <td id="name2">Lisa Simpson</td>
-                    <td headers="name2">lsimpson@yahoo.com</td>
-                    <td headers="name2">4</td>
-                    <td headers="name2">$4500</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3">Operations</td>
-                    <td id="name3">Michael Gallagher</td>
-                    <td headers="name3">michaeljosephgallagher@hotmail.com</td>
-                    <td headers="name3">15</td>
-                    <td headers="name3">$4000</td>
-                  </tr>
-                  <tr>
-                    <td id="name4">Morty Smith</td>
-                    <td headers="name4">morty.mort@multiverse.org</td>
-                    <td headers="name4">2</td>
-                    <td headers="name4">$3000</td>
-                  </tr>
-                  <tr>
-                    <td id="name5">Mario Hawkins</td>
-                    <td headers="name5">mhawki41@charlotte.edu</td>
-                    <td headers="name5">9</td>
-                    <td headers="name5">$4100</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3">Creative</td>
-                    <td id="name6">Scooby Doo</td>
-                    <td headers="name6">scoobyroo@mysteryINC.com</td>
-                    <td headers="name6">12</td>
-                    <td headers="name6">$4700</td>
-                  </tr>
-                  <tr>
-                    <td id="name7">Aang Airbender</td>
-                    <td headers="name7">avatar@benders.com</td>
-                    <td headers="name7">20</td>
-                    <td headers="name7">$5100</td>
-                  </tr>
-                  <tr>
-                    <td id="name8">Elsa Arendelle</td>
-                    <td headers="name8">queenice@gmail.com</td>
-                    <td headers="name8">6</td>
-                    <td headers="name8">$4900</td>
-                  </tr>
-                  <tr>
-                    <th colspan="3">Total Years of Service</th>
-                    <td>76</td>
-                    <td>$35,300</td>
-                  </tr>
+                    <tr><td>Spongebob Squarepants</td><td>sponge@bikinibiz.com</td><td>8</td></tr>
+                    <tr><td>Lisa Simpson</td><td>lsimpson@yahoo.com</td><td>4</td></tr>
+                    <tr><td>Michael Gallagher</td><td>michaeljosephgallagher@hotmail.com</td><td>15</td></tr>
+                    <tr><td>Morty Smith</td><td>morty.mort@multiverse.org</td><td>2</td></tr>
+                    <tr><td>Mario Hawkins</td><td>mhawki41@charlotte.edu</td><td>9</td></tr>
+                    <tr><td>Scooby Doo</td><td>scoobyroo@mysteryINC.com</td><td>12</td></tr>
+                    <tr><td>Aang Airbender</td><td>avatar@benders.com</td><td>20</td></tr>
+                    <tr><td>Elsa Arendelle</td><td>queenice@gmail.com</td><td>6</td></tr>
                 </tbody>
-              </table>
-            </figure>
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLinclude.js"></script>
-</body>
+                </table>
+        
+                <h3>Employee Data in Complex Table</h3>
+                <figure>
+                <figcaption>Employee Information by Role and Monthly Salary</figcaption>
+                <table>
+                    <thead>
+                    <tr>
+                        <th id="category" scop="col">Department</th>
+                        <th id="name" scop="col">Name</th>
+                        <th id="email" scop="col">Email</th>
+                        <th id="years" scop="col">Years</th>
+                        <th id="salary" scop="col">Monthly Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="2" headers="category">Leadership</td>
+                        <td id="category name">Spongebob Squarepants</td>
+                        <td headers="category email">sponge@bikinibiz.com</td>
+                        <td headers="category years">8</td>
+                        <td headers="category salary">$5000</td>
+                    </tr>
+                    <tr>
+                        <td id="category name">Lisa Simpson</td>
+                        <td headers="catagory email">lsimpson@yahoo.com</td>
+                        <td headers="category years">4</td>
+                        <td headers="category salary">$4500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" headers="category">Operations</td>
+                        <td id="category name">Michael Gallagher</td>
+                        <td headers="category email">michaeljosephgallagher@hotmail.com</td>
+                        <td headers="category years">15</td>
+                        <td headers="category salary">$4000</td>
+                    </tr>
+                    <tr>
+                        <td id="category name">Morty Smith</td>
+                        <td headers="category email">morty.mort@multiverse.org</td>
+                        <td headers="category years">2</td>
+                        <td headers="category salary">$3000</td>
+                    </tr>
+                    <tr>
+                        <td id="category name">Mario Hawkins</td>
+                        <td headers="category email">mhawki41@charlotte.edu</td>
+                        <td headers="category years">9</td>
+                        <td headers="category salary">$4100</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" headers="category">Creative</td>
+                        <td id="category name">Scooby Doo</td>
+                        <td headers="category email">scoobyroo@mysteryINC.com</td>
+                        <td headers="category years">12</td>
+                        <td headers="category salary">$4700</td>
+                    </tr>
+                    <tr>
+                        <td id="category name">Aang Airbender</td>
+                        <td headers="category email">avatar@benders.com</td>
+                        <td headers="category years">20</td>
+                        <td headers="category salary">$5100</td>
+                    </tr>
+                    <tr>
+                        <td id="category name">Elsa Arendelle</td>
+                        <td headers="category email">queenice@gmail.com</td>
+                        <td headers="category years">6</td>
+                        <td headers="category salary">$4900</td>
+                    </tr>
+                     <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td>76</td>
+                        <td>$35,300</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </figure>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLinclude.js"></script>
+    </body>
 </html>
