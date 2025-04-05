@@ -46,10 +46,6 @@
             background-color: rgb(110, 110, 110);
             color: rgb(245, 245, 245);
         }
-        tr:has(th[colspan]) {
-            background-color: rgb(110, 110, 110);
-            color: rgb(245, 245, 245);
-        }
         figure tfoot {
             background-color: rgb(110, 110, 110);
             color: rgb(245, 245, 245);
@@ -160,12 +156,12 @@
                         <td headers="category years">6</td>
                         <td headers="category salary">$4900</td>
                     </tr>
-                     <tr>
+                    </tbody>
+                    <tfoot>
                         <th id="total" colspan="3">Total Years of Service</th>
                         <td headers="total years">76</td>
                         <td headers="total salary">$35,300</td>
-                    </tr>
-                    </tbody>
+                    </tfoot>
                 </table>
                 </figure>
         </main>
