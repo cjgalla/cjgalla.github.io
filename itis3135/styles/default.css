@@ -31,6 +31,17 @@ img {
     height: 60%;
 }
 
+.wireframe-img {
+    max-width: 100%;             
+    width: auto;                 
+    height: auto;                
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;       
+    max-height: 385px;           
+  }
+  
+
 
 figure {
     text-align: center;
