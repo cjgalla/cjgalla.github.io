@@ -82,23 +82,19 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid a {
-  flex: 0 1 300px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 300px;
   max-width: 100%;
-  display: block;
+  text-decoration: none;
 }
 
 .gallery-grid img {
-  display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 200ms ease-in-out;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 footer a {
