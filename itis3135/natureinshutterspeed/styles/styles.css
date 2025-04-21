@@ -71,7 +71,7 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid {
-  display: block;
+  text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -79,17 +79,16 @@ nav ul.nav a:hover {
 
 .gallery-grid a {
   display: inline-block;
-  width: 300px;
-  margin: 8px;
+  margin: 10px;
   text-decoration: none;
 }
 
 .gallery-grid img {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 300px;
+  height: 225px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 
 footer a {
