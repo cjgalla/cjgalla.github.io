@@ -47,7 +47,7 @@ nav ul.nav a:hover {
 .intro-images {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  column-gap: 16px;
   margin: 2em auto;
   max-width: 900px;
   flex-wrap: wrap;
@@ -58,7 +58,7 @@ nav ul.nav a:hover {
   max-width: 400px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .aboutImg {
@@ -67,7 +67,7 @@ nav ul.nav a:hover {
   display: block;
   margin: 2rem auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-grid {
@@ -94,7 +94,7 @@ nav ul.nav a:hover {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
