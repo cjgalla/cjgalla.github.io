@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nature In Shutter Speed</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -13,8 +14,8 @@
 
   <main>
     <section class="intro-images">
-      <img src="images/western/pacific4.JPG" alt="Sunset over the pacific" class="front-photo">
-      <img src="images/western/glacier1.JPG" alt="Glacier National Park" class="front-photo">
+      <a href="images/western/pacific4.JPG" data-lightbox="west-gallery"><img src="images/west/pacific4.jpg" alt="pacific4" loading="lazy" /></a>
+      <a href="images/western/glacier1.JPG" data-lightbox="west-gallery"><img src="images/west/glacier1.jpg" alt="glacier1" loading="lazy" /></a>
     </section>
 
     <section class="intro">
@@ -31,5 +32,6 @@
     <div data-include="components/footer.html"></div>
   </footer>
   <script src="scripts/HTMLInclude.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
