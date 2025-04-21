@@ -71,7 +71,6 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 16px;
@@ -82,7 +81,6 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid a {
-  flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 300px;
   max-width: 100%;
@@ -90,7 +88,6 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid img {
-  width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
