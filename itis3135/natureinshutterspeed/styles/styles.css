@@ -71,25 +71,26 @@ nav ul.nav a:hover {
 }
 
 .gallery-grid {
-  justify-content: center;
-  row-gap: 16px;
-  column-gap: 16px;
+  display: block;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .gallery-grid a {
-  flex-basis: 300px;
-  max-width: 100%;
+  display: inline-block;
+  width: 300px;
+  margin: 8px;
   text-decoration: none;
 }
 
 .gallery-grid img {
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 footer a {
   color: #bbb;
