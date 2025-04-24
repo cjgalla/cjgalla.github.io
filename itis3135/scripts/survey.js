@@ -66,9 +66,11 @@ const courses = [
     const formData = new FormData(form);
   
     let courses = '';
-    formData.getAll('courses[]').forEach(course => {
-      courses += `<li>${course}</li>`;
+        formData.getAll('courses[]').forEach(course => {
+        const [title, ...desc] = course.split(' - ');
+        courses += `<li><strong>${title.trim()}</strong> - ${desc.join(' - ').trim()}</li>`;
     });
+
   
     submittedContent.innerHTML = `
       <img src="${document.getElementById('preview').src}" alt="${formData.get('altText')}" style="max-width:200px;">
