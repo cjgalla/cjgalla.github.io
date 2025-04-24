@@ -108,3 +108,50 @@ footer a {
     text-decoration: none;
     margin: 0 0.5em;
 }
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    main {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Scales down headers */
+    }
+
+    nav {
+        display: block; /* Ensures easy navigation */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+/* Large Screens (Above 1200px) */
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1400px; /* Allow slightly more width on large screens */
+    }
+
+    body {
+        font-size: 18px; /* Improve readability on big screens */
+    }
+}
+
