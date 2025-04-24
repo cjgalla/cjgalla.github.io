@@ -65,15 +65,16 @@ const courses = [
     const submittedContent = document.getElementById('submittedContent');
     const formData = new FormData(form);
   
+    document.getElementById('introPrompt').style.display = 'none';
+  
     let courses = '';
-        formData.getAll('courses[]').forEach(course => {
-        const [title, ...desc] = course.split(' - ');
-        courses += `<li><strong>${title.trim()}</strong> - ${desc.join(' - ').trim()}</li>`;
+    formData.getAll('courses[]').forEach(course => {
+      const [title, ...desc] = course.split(' - ');
+      courses += `<li><strong>${title.trim()}</strong> - ${desc.join(' - ').trim()}</li>`;
     });
-
   
     submittedContent.innerHTML = `
-      <img src="${document.getElementById('preview').src}" alt="${formData.get('altText')}" style="max-width:200px;">
+      <img src="${document.getElementById('preview').src}" alt="${formData.get('altText')}" style="width:530px; max-width:100%; height:auto;">
       <p><em>${formData.get('caption')}</em></p>
       <ul>
         <li><strong>Personal Background:</strong> ${formData.get('personal')}</li>
