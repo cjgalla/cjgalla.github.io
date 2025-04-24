@@ -71,20 +71,23 @@ const courses = [
     });
   
     submittedContent.innerHTML = `
-      <h3>Welcome ${formData.get('name')} ${formData.get('lastName')} (${formData.get('nickname')})!</h3>
-      <p>Mascot: ${formData.get('mascot')}</p>
       <img src="${document.getElementById('preview').src}" alt="${formData.get('altText')}" style="max-width:200px;">
-      <p>${formData.get('caption')}</p>
-      <p>Personal Background: ${formData.get('personal')}</p>
-      <p>Professional Background: ${formData.get('professional')}</p>
-      <p>Academic Background: ${formData.get('academic')}</p>
-      <p>Web Development Background: ${formData.get('webDev')}</p>
-      <p>Primary Platform: ${formData.get('platform')}</p>
-      <p>Courses:</p><ul>${courses}</ul>
-      <p>Funny Thing: ${formData.get('funnyThing')}</p>
+      <p><em>${formData.get('caption')}</em></p>
+      <ul>
+        <li><strong>Personal Background:</strong> ${formData.get('personal')}</li>
+        <li><strong>Professional Background:</strong> ${formData.get('professional')}</li>
+        <li><strong>Academic Background:</strong> ${formData.get('academic')}</li>
+        <li><strong>Background in this subject:</strong> ${formData.get('webDev')}</li>
+        <li><strong>Primary Computer Platform:</strong> ${formData.get('platform')}</li>
+        <li><strong>Courses:</strong>
+          <ul>${courses}</ul>
+        </li>
+        <li><strong>Funny/Interesting item about yourself:</strong> ${formData.get('funnyThing')}</li>
+      </ul>
       <button onclick="location.reload()">Reset</button>
     `;
   
     form.style.display = 'none';
   }
+  
   
