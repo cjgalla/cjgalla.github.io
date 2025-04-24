@@ -53,7 +53,15 @@
         <label for="mascot">Mascot:</label>
         <input type="text" id="mascot" name="mascot" value="Carefree Goose">
         </p>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
         
+        <label for="altText">Image Alt Text:</label>
+        <input type="text" id="altText" name="altText">
+        
+        <label for="caption">Image Caption:</label>
+        <input type="text" id="caption" name="caption">
+
         <label for="personal">Personal Background:</label>
         <textarea id="personal" name="personal" rows="3" value=" I'm an only child who was born and raised in Raleigh North Carolina, after living in rural Youngsville for the first 4 years of my life. I went to public schools my whole life and have always had a drive to make other people's day better." required></textarea>
         
@@ -74,24 +82,14 @@
             <input type="text" name="courses[]" placeholder="Enter course">
         </div>
         <button type="button" onclick="addCourse()">Add Course</button>
-        
-        <label for="image">Upload Image:</label>
-        <input type="file" id="image" name="image" accept="image/*">
-        
-        <label for="altText">Image Alt Text:</label>
-        <input type="text" id="altText" name="altText">
-        
-        <label for="caption">Image Caption:</label>
-        <input type="text" id="caption" name="caption">
-        
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
 
         <label for="funnyThing">Funny/Interesting item about yourself</label>
         <input type="text" id="funnyThing" name="funnyThing" value=" I've been to all 48 of the “continental” states, just waiting to go see Alaska and Hawaii.">
 
         <input type="checkbox" id="agreement" name="agreement" required checked>
         <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
         </label>
     </form>
     <footer>
