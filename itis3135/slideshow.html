@@ -3,163 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <title>Slideshow Gallery</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="default.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
-        .slideshow-container {
+        .container {
             position: relative;
             margin: auto;
             max-width: 800px;
         }
-        
-        .slide {
+
+        .mySlides {
             display: none;
         }
-        
-        .slide img {
+
+        .mySlides img {
             width: 100%;
             height: auto;
         }
-        
+
+        .numbertext {
+            position: absolute;
+            top: 0;
+            padding: 8px 12px;
+            color: #f2f2f2;
+            font-size: 12px;
+        }
+
         .prev, .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
             width: auto;
-            padding: 10px;
+            padding: 16px;
             margin-top: -22px;
             color: black;
             font-weight: bold;
             font-size: 24px;
             user-select: none;
         }
-        
+
         .prev {
             left: 0;
         }
-        
+
         .next {
             right: 0;
         }
-        
-        .caption {
+
+        .caption-container {
             text-align: center;
-            font-size: 18px;
-            padding: 8px;
-            background-color: rgba(0,0,0,0.5);
+            background-color: black;
+            padding: 2px 16px;
             color: white;
         }
-    </style>    
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .column {
+            flex: 0 0 auto;
+            width: 100px;
+            margin: 0 2px;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active, .demo:hover {
+            opacity: 1;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div data-include="components/header.html"></div>
     </header>
+
     <main>
         <h1>Slideshow of My Name - Collin Gallagher</h1>
 
-        <div class="slideshow-container">
+        <div class="container">
 
-            <div class="slide fade">
-                <img src="images/c_cat.jpg" alt="C for Cat">
-                <div class="caption">C - Cat</div>
+            <div class="mySlides">
+                <div class="numbertext">1 / 15</div>
+                <img src="images/c_cat.jpg" alt="C - Cat">
             </div>
 
-            <div class="slide fade">
-                <img src="images/o_owl.jpg" alt="O for Owl">
-                <div class="caption">O - Owl</div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 15</div>
+                <img src="images/o_owl.jpg" alt="O - Owl">
             </div>
 
-            <div class="slide fade">
-                <img src="images/l_lake.jpg" alt="L for Lake">
-                <div class="caption">L - Lake</div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 15</div>
+                <img src="images/l_lake.jpg" alt="L - Lake">
             </div>
 
-            <div class="slide fade">
-                <img src="images/l_lantern.jpg" alt="L for Lantern">
-                <div class="caption">L - Lantern</div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 15</div>
+                <img src="images/l_lantern.jpg" alt="L - Lantern">
             </div>
 
-            <div class="slide fade">
-                <img src="images/i_icecream.jpg" alt="I for Ice Cream">
-                <div class="caption">I - Ice Cream</div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 15</div>
+                <img src="images/i_icecream.jpg" alt="I - Ice Cream">
             </div>
 
-            <div class="slide fade">
-                <img src="images/n_newyork.jpg" alt="N for New York">
-                <div class="caption">N - New York</div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 15</div>
+                <img src="images/n_newyork.jpg" alt="N - New York">
             </div>
 
-            <div class="slide fade">
-                <img src="images/g_giraffe.jpg" alt="G for Giraffe">
-                <div class="caption">G - Giraffe</div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 15</div>
+                <img src="images/g_giraffe.jpg" alt="G - Giraffe">
             </div>
 
-            <div class="slide fade">
-                <img src="images/a_airplane.jpg" alt="A for Airplane">
-                <div class="caption">A - Airplane</div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 15</div>
+                <img src="images/a_airplane.jpg" alt="A - Airplane">
             </div>
 
-            <div class="slide fade">
-                <img src="images/l_leaf.jpg" alt="L for Leaf">
-                <div class="caption">L - Leaf</div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 15</div>
+                <img src="images/l_leaf.jpg" alt="L - Leaf">
             </div>
 
-            <div class="slide fade">
-                <img src="images/l_lighthouse.jpg" alt="L for Lighthouse">
-                <div class="caption">L - Lighthouse</div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 15</div>
+                <img src="images/l_lighthouse.jpg" alt="L - Lighthouse">
             </div>
 
-            <div class="slide fade">
-                <img src="images/a_albino.jpg" alt="A for Albino Peacock">
-                <div class="caption">A - Albino Peacock</div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 15</div>
+                <img src="images/a_albino.jpg" alt="A - Albino Peacock">
             </div>
 
-            <div class="slide fade">
-                <img src="images/g_guitar.jpg" alt="G for Guitar">
-                <div class="caption">G - Guitar</div>
+            <div class="mySlides">
+                <div class="numbertext">12 / 15</div>
+                <img src="images/g_guitar.jpg" alt="G - Guitar">
             </div>
 
-            <div class="slide fade">
-                <img src="images/h_hamburger.jpg" alt="H for Hamburger">
-                <div class="caption">H - Hamburger</div>
+            <div class="mySlides">
+                <div class="numbertext">13 / 15</div>
+                <img src="images/h_hamburger.jpg" alt="H - Hamburger">
             </div>
 
-            <div class="slide fade">
-                <img src="images/e_evergreen.jpg" alt="E for Evergreen">
-                <div class="caption">E - Evergreen</div>
+            <div class="mySlides">
+                <div class="numbertext">14 / 15</div>
+                <img src="images/e_evergreen.jpg" alt="E - Evergreen">
             </div>
 
-            <div class="slide fade">
-                <img src="images/r_rainbow.jpg" alt="R for Rainbow">
-                <div class="caption">R - Rainbow</div>
+            <div class="mySlides">
+                <div class="numbertext">15 / 15</div>
+                <img src="images/r_rainbow.jpg" alt="R - Rainbow">
             </div>
 
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
-        </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <br>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
 
-        <div class="image-list">
-            <a href="#" class="image-link" data-slide="1">C - Cat</a> |
-            <a href="#" class="image-link" data-slide="2">O - Owl</a> |
-            <a href="#" class="image-link" data-slide="3">L - Lake</a> |
-            <a href="#" class="image-link" data-slide="4">L - Lantern</a> |
-            <a href="#" class="image-link" data-slide="5">I - Ice Cream</a> |
-            <a href="#" class="image-link" data-slide="6">N - New York</a> |
-            <a href="#" class="image-link" data-slide="7">G - Giraffe</a> |
-            <a href="#" class="image-link" data-slide="8">A - Airplane</a> |
-            <a href="#" class="image-link" data-slide="9">L - Leaf</a> |
-            <a href="#" class="image-link" data-slide="10">L - Lighthouse</a> |
-            <a href="#" class="image-link" data-slide="11">A - Albino Peacock</a> |
-            <a href="#" class="image-link" data-slide="12">G - Guitar</a> |
-            <a href="#" class="image-link" data-slide="13">H - Hamburger</a> |
-            <a href="#" class="image-link" data-slide="14">E - Evergreen</a> |
-            <a href="#" class="image-link" data-slide="15">R - Rainbow</a>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/c_cat.jpg" style="width:100%" onclick="currentSlide(1)" alt="C - Cat">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/o_owl.jpg" style="width:100%" onclick="currentSlide(2)" alt="O - Owl">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/l_lake.jpg" style="width:100%" onclick="currentSlide(3)" alt="L - Lake">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/l_lantern.jpg" style="width:100%" onclick="currentSlide(4)" alt="L - Lantern">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/i_icecream.jpg" style="width:100%" onclick="currentSlide(5)" alt="I - Ice Cream">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/n_newyork.jpg" style="width:100%" onclick="currentSlide(6)" alt="N - New York">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/g_giraffe.jpg" style="width:100%" onclick="currentSlide(7)" alt="G - Giraffe">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/a_airplane.jpg" style="width:100%" onclick="currentSlide(8)" alt="A - Airplane">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/l_leaf.jpg" style="width:100%" onclick="currentSlide(9)" alt="L - Leaf">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/l_lighthouse.jpg" style="width:100%" onclick="currentSlide(10)" alt="L - Lighthouse">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/a_albino.jpg" style="width:100%" onclick="currentSlide(11)" alt="A - Albino Peacock">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/g_guitar.jpg" style="width:100%" onclick="currentSlide(12)" alt="G - Guitar">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/h_hamburger.jpg" style="width:100%" onclick="currentSlide(13)" alt="H - Hamburger">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/e_evergreen.jpg" style="width:100%" onclick="currentSlide(14)" alt="E - Evergreen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/r_rainbow.jpg" style="width:100%" onclick="currentSlide(15)" alt="R - Rainbow">
+                </div>
+            </div>
         </div>
     </main>
-
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
