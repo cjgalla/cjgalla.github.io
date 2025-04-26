@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow Gallery</title>
+    <link rel="stylesheet" href="default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            max-width: 800px;
+        }
+        
+        .slide {
+            display: none;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            user-select: none;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .caption {
+            text-align: center;
+            font-size: 18px;
+            padding: 8px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h1>Slideshow of My Name - Collin Gallagher</h1>
+
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="images/c_cat.jpg" alt="C for Cat">
+                <div class="caption">C - Cat</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/o_owl.jpg" alt="O for Owl">
+                <div class="caption">O - Owl</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/l_lake.jpg" alt="L for Lake">
+                <div class="caption">L - Lake</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/l_lantern.jpg" alt="L for Lantern">
+                <div class="caption">L - Lantern</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/i_icecream.jpg" alt="I for Ice Cream">
+                <div class="caption">I - Ice Cream</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/n_newyork.jpg" alt="N for New York">
+                <div class="caption">N - New York</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/g_giraffe.jpg" alt="G for Giraffe">
+                <div class="caption">G - Giraffe</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/a_airplane.jpg" alt="A for Airplane">
+                <div class="caption">A - Airplane</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/l_leaf.jpg" alt="L for Leaf">
+                <div class="caption">L - Leaf</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/l_lighthouse.jpg" alt="L for Lighthouse">
+                <div class="caption">L - Lighthouse</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/a_albino.jpg" alt="A for Albino Peacock">
+                <div class="caption">A - Albino Peacock</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/g_guitar.jpg" alt="G for Guitar">
+                <div class="caption">G - Guitar</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/h_hamburger.jpg" alt="H for Hamburger">
+                <div class="caption">H - Hamburger</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/e_evergreen.jpg" alt="E for Evergreen">
+                <div class="caption">E - Evergreen</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="images/r_rainbow.jpg" alt="R for Rainbow">
+                <div class="caption">R - Rainbow</div>
+            </div>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div class="image-list">
+            <a href="#" class="image-link" data-slide="1">C - Cat</a> |
+            <a href="#" class="image-link" data-slide="2">O - Owl</a> |
+            <a href="#" class="image-link" data-slide="3">L - Lake</a> |
+            <a href="#" class="image-link" data-slide="4">L - Lantern</a> |
+            <a href="#" class="image-link" data-slide="5">I - Ice Cream</a> |
+            <a href="#" class="image-link" data-slide="6">N - New York</a> |
+            <a href="#" class="image-link" data-slide="7">G - Giraffe</a> |
+            <a href="#" class="image-link" data-slide="8">A - Airplane</a> |
+            <a href="#" class="image-link" data-slide="9">L - Leaf</a> |
+            <a href="#" class="image-link" data-slide="10">L - Lighthouse</a> |
+            <a href="#" class="image-link" data-slide="11">A - Albino Peacock</a> |
+            <a href="#" class="image-link" data-slide="12">G - Guitar</a> |
+            <a href="#" class="image-link" data-slide="13">H - Hamburger</a> |
+            <a href="#" class="image-link" data-slide="14">E - Evergreen</a> |
+            <a href="#" class="image-link" data-slide="15">R - Rainbow</a>
+        </div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>
