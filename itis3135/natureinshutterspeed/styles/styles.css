@@ -8,13 +8,13 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000;
+    color: #2ecc71;
 }
 
 header, footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #011f05;
+    color: #a8ffb2;
     text-align: center;
     padding: 1em;
 }
@@ -24,7 +24,7 @@ nav ul.nav {
     display: flex;
     justify-content: center;
     padding: 0;
-    background-color: #333;
+    background-color: #023020;
     margin: 0;
 }
 
@@ -33,14 +33,14 @@ nav ul.nav li {
 }
 
 nav ul.nav a {
-    color: white;
+    color: #a8ffb2;
     text-decoration: none;
     padding: 0.5em;
     display: block;
 }
 
 nav ul.nav a:hover {
-    background-color: #555;
+    background-color: #045928;
 }
 
 .intro {
@@ -48,6 +48,7 @@ nav ul.nav a:hover {
     padding: 1em 2em;
     max-width: 800px;
     margin: 0 auto;
+    color: #b3ffcc;
 }
 
 .intro-images {
@@ -103,35 +104,57 @@ nav ul.nav a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.gallery-grid figcaption,
+.caption {
+    color: #b3ffcc;
+    background-color: rgba(0, 31, 5, 0.6);
+}
+
 footer a {
-    color: #bbb;
+    color: #cccccc;
     text-decoration: none;
     margin: 0 0.5em;
 }
 
-/* Tablet (768px and below) */
+footer a:hover {
+    color: #2ecc71;
+}
+
+button, .btn {
+    background-color: #016837;
+    color: #e0ffe0;
+    border: 1px solid #2ecc71;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #028a53;
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     main {
         width: 90%;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column;
     }
 }
 
-/* Mobile (480px and below) */
 @media screen and (max-width: 480px) {
     main {
         width: 95%;
     }
 
     h1 {
-        font-size: 1.5em; /* Scales down headers */
+        font-size: 1.5em;
     }
 
     nav {
-        display: block; /* Ensures easy navigation */
+        display: block;
     }
 
     nav ul {
@@ -144,14 +167,13 @@ footer a {
         margin: 5px 0;
     }
 }
-/* Large Screens (Above 1200px) */
+
 @media screen and (min-width: 1200px) {
     main {
-        max-width: 1400px; /* Allow slightly more width on large screens */
+        max-width: 1400px;
     }
 
     body {
-        font-size: 18px; /* Improve readability on big screens */
+        font-size: 18px;
     }
 }
-
