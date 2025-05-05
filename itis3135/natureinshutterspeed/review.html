@@ -13,22 +13,24 @@
   </header>
   <main class="intro">
     <h2>Leave a Review or Recommendation</h2>
-    <form action="#" method="POST">
+    <form id="reviewForm" action="#" method="POST">
       <label for="name">Name:</label><br />
       <input type="text" id="name" name="name" required /><br /><br />
 
       <label for="email">Email:</label><br />
       <input type="email" id="email" name="email" required /><br /><br />
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <label for="reviewMessage">Message:</label><br />
+      <textarea id="reviewMessage" name="message" rows="5" required></textarea><br /><br />
 
       <button type="submit">Submit</button>
     </form>
+    <p id="message-output"></p>
   </main>
   <footer>
     <div data-include="components/footer.html"></div>
   </footer> 
   <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/reviewForm.js"></script>
 </body>
 </html>
