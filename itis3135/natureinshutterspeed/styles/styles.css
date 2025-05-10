@@ -43,8 +43,14 @@ nav ul.nav a:hover {
     background-color: #045928;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: left;
+}
+
 .intro {
-    text-align: center;
     padding: 1em 2em;
     max-width: 800px;
     margin: 0 auto;
@@ -132,6 +138,11 @@ button, .btn {
 button:hover, .btn:hover {
     background-color: #028a53;
     color: #fff;
+}
+
+p, h2, h3, ul, ol {
+    margin-bottom: 1em;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
