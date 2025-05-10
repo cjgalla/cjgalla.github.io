@@ -145,6 +145,12 @@ p, h2, h3, ul, ol {
     line-height: 1.6;
 }
 
+main h1,
+main h2 {
+  text-align: center;
+}
+
+
 @media screen and (max-width: 768px) {
     main {
         width: 90%;
